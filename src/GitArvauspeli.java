@@ -23,6 +23,7 @@ public class GitArvauspeli {
 			if (name.equals("stop"))
 			{
 				System.out.println("Peli päättyy.");
+				laskuri--;
 				break;
 			}
 		} while (!name.equals("Karoliina"));
