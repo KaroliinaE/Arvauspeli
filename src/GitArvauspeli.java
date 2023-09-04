@@ -8,9 +8,11 @@ public class GitArvauspeli {
 		Scanner in = new Scanner(System.in);
 
 		String name;
+		int laskuri = 0;
 		
 		do
 		{
+			laskuri++;
 			System.out.println("Arvaa minun nimeni.");
 			name=in.nextLine();
 			if (name.equals("Karoliina"))
@@ -20,7 +22,7 @@ public class GitArvauspeli {
 		} while (!name.equals("Karoliina"));
 		
 		System.out.println("Onnittelut, arvasit oikein! Peli päättyy.");
-		
+		System.out.println("Arvasit " + laskuri + " kertaa.");
 		
 	}
 
