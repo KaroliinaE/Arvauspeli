@@ -10,10 +10,11 @@ public class GitArvauspeli {
 		String name;
 		int laskuri = 0;
 		
+		System.out.println("Arvaa minun nimeni.");
 		do
 		{
 			laskuri++;
-			System.out.println("Arvaa minun nimeni. Jos haluat lopettaa pelin, kirjoita ´stop´");
+			
 			name=in.nextLine();
 			if (name.equals("Karoliina"))
 			{
@@ -26,6 +27,7 @@ public class GitArvauspeli {
 				laskuri--;
 				break;
 			}
+			System.out.println("Arvaa uudelleen! Jos haluat lopettaa pelin, kirjoita ´stop´");
 		} while (!name.equals("Karoliina"));
 		
 		
