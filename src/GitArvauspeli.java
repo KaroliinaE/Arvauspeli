@@ -14,7 +14,6 @@ public class GitArvauspeli {
 		do
 		{
 			laskuri++;
-			
 			name=in.nextLine();
 			if (name.equals("Karoliina"))
 			{
