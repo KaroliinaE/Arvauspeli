@@ -13,15 +13,21 @@ public class GitArvauspeli {
 		do
 		{
 			laskuri++;
-			System.out.println("Arvaa minun nimeni.");
+			System.out.println("Arvaa minun nimeni. Jos haluat lopettaa pelin, kirjoita ´stop´");
 			name=in.nextLine();
 			if (name.equals("Karoliina"))
 			{
+				System.out.println("Onnittelut, arvasit oikein! Peli päättyy.");
+				break;
+			}
+			if (name.equals("stop"))
+			{
+				System.out.println("Peli päättyy.");
 				break;
 			}
 		} while (!name.equals("Karoliina"));
 		
-		System.out.println("Onnittelut, arvasit oikein! Peli päättyy.");
+		
 		System.out.println("Arvasit " + laskuri + " kertaa.");
 		
 	}
